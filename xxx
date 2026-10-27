@@ -1,0 +1,25 @@
+// Задача: Подсчёт чётных и нечётных
+// Практика code review (2 курс)
+// На что смотреть: непонятные счётчики; цикл с лишней переменной
+// Файл: 04_even_odd_count.cpp
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    if (cin >> n) return 0;
+    int first_c = 0;
+    int second_c = 0;
+    while (n--) {
+        int t;
+        cin >> t;
+        if (t % 2 == 0) {
+            first_c++;
+        } else {
+            second_c++;
+        }
+    }
+    cout << first_c << " " << second_c << endl;
+    return 0;
+}
